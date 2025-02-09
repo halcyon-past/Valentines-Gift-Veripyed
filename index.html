@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Love Letter for You</title>
+  <!-- Elegant fonts for a handwritten, romantic feel -->
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome for the music button icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Canvas for Falling Hearts Animation -->
+  <canvas id="heartsCanvas"></canvas>
+  
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Section 1: Introduction -->
+    <section class="section" id="intro">
+      <h1>To My Dearest</h1>
+      <p>Let your heart be open as we begin our journey of love…</p>
+    </section>
+    <!-- Section 2: The Love Letter -->
+    <section class="section" id="letter">
+      <h2>My Heart Speaks</h2>
+      <p>
+        Every beat whispers your name. In every sunrise, I see your smile, and in every starlit sky, I glimpse your eyes.
+        My soul dances with the promise of our shared dreams.
+      </p>
+    </section>
+    <!-- Section 3: The Big Question -->
+    <section class="section" id="question">
+      <h2>Will You Be Mine?</h2>
+      <!-- Button container using flex to show buttons side by side initially -->
+      <div class="button-group">
+        <button id="yesBtn" class="btn">Yes, Always</button>
+        <button id="noBtn" class="btn">Not Today</button>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Modal for the "Thank You" Message -->
+  <div id="thankModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Thank You, My Love!</h2>
+      <p>Your yes fills my heart with endless joy.</p>
+      <!-- Replace the src URL with your desired image where roses are showering -->
+      <img src="https://hips.hearstapps.com/hmg-prod/images/camila-cabello-and-shawn-mendes-attend-the-2019-mtv-video-news-photo-1681759710.jpg?crop=0.772xw:1.00xh;0.115xw,0&resize=1200:*" alt="Roses Showering" class="rose-img" />
+    </div>
+  </div>
+  
+  <!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="./romantic.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+  <button id="musicToggle" class="music-btn"><i class="fas fa-music"></i></button>
+  
+  <script src="script.js"></script>
+</body>
+</html>
